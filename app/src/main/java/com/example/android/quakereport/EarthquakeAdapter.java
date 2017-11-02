@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package com.example.android.quakereport;
 
 import android.content.Context;
@@ -29,19 +15,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-/**
- * An {@link EarthquakeAdapter} knows how to create a list item layout for each earthquake
- * in the data source (a list of {@link Earthquake} objects).
- *
- * These list item layouts will be provided to an adapter view like ListView
- * to be displayed to the user.
- */
+
 public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
-    /**
-     * The part of the location string from the USGS service that we use to determine
-     * whether or not there is a location offset present ("5km N of Cairo, Egypt").
-     */
+
     private static final String LOCATION_SEPARATOR = " of ";
 
     /**
